@@ -1,15 +1,14 @@
-Small program to slugify a string
-===========
 
-Install
-====
+## Install
 `go get github.com/lafolle/slug`
 
-Usage
-====
-`slug how do you do`  -> how-do-you-do
-`slug` ->
+## Usage
+```Shell
+karan $ slug how are you doing
+how-are-you-doing
+karan $ slug
+karan $ 
+```
 
-Todo
-===
+## Todo
 Tests
