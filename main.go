@@ -1,32 +1,15 @@
 package main
 
 import (
-	"fmt"
 	"os"
 	"strings"
+    "github.com/lafolle/slug/slugify"
 )
-
-func Slugify(s string) string {
-	words := strings.Split(s, " ")
-	var slug, w string
-	for i := range words {
-		w = strings.ToLower(strings.TrimSpace(words[i]))
-		if len(w) == 0 {
-			continue
-		}
-		if i == 0 {
-			slug = w
-		} else {
-			slug = fmt.Sprintf("%s-%s", slug, w)
-		}
-	}
-	return slug
-}
 
 func main() {
 	args := os.Args[1:]
-	slug := Slugify(strings.Join(args, " "))
-	if len(slug) != 0 {
-		println(slug)
+	s := slugify.Slugify(strings.Join(args, " "))
+	if len(s) != 0 {
+		println(s)
 	}
 }

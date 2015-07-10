@@ -7,8 +7,5 @@
 karan $ slug how are you doing
 how-are-you-doing
 karan $ slug
-karan $ 
+karan $
 ```
-
-## Todo
-Tests
