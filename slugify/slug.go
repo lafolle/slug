@@ -1,13 +1,12 @@
 package slugify
 
 import (
-    "strings"
-    "fmt"
+	"fmt"
+	"strings"
 )
 
-
 func Slugify(s string) string {
-    s = strings.TrimSpace(s)
+	s = strings.TrimSpace(s)
 	words := strings.Split(s, " ")
 	var slug, w string
 	for i := range words {
@@ -23,4 +22,3 @@ func Slugify(s string) string {
 	}
 	return slug
 }
-
